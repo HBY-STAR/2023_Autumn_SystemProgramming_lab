@@ -1,0 +1,31 @@
+###Created by HouBinyang###
+
+#
+create test_file for read tests by run:
+    gcc create_test_file.c
+    ./create_test_file
+#test_file's size is 40960000 Bytes  
+#
+
+Test Commands:
+test_write_with_osync.c
+    #change bufsize and run the command below:
+        gcc test_write_with_osync.c
+        time ./a.out
+        rm test_file1
+
+test_write_without_osync.c
+    #change bufsize and run the command below:
+        gcc test_write_without_osync.c
+        time ./a.out
+        rm test_file2
+
+test_read.c
+    #change bufsize and run the command below:
+        gcc test_read.c
+        time ./a.out
+
+test_fread.c
+    #change bufsize and run the command below:
+        gcc test_fread.c
+        time ./a.out
